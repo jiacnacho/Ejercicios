@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<!--         Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
+        a)	La cantidad de valores negativos ingresados.
+        b)	La cantidad de valores positivos ingresados.
+        c)	La cantidad de múltiplos de 15.
+        d)	El valor acumulado de los números ingresados que son pares. -->
+
+    <script>
+    
+    var numeros;
+    var contador;
+    var countnegativos=0;
+    var countpositivos=0;
+    var multiplos=0;
+    var countmultiplos=0;
+    var acmulado=0;
+    var sumapares=0;
+    var lastfive=0;
+    alert('Ingrese 10 numeros por favor');
+
+    for (var i=0; i<10 ; i++){
+    numeros = parseInt(prompt("ingrese 10 numeros"));
+        if (numeros<0){
+            countnegativos++;
+        }else {
+            countpositivos++;
+        }
+    multiplos=parseInt(numeros%15);
+    if (multiplos==0){
+        countmultiplos++; 
+    }
+    acumulado=parseInt(numeros%2);
+    if (acumulado ==0){
+        sumapares = sumapares+numeros;
+    }
+
+    /* Desarrollar un programa que solicite la carga de 10 números e imprima la suma de lo últimos 5 valores ingresados. */
+    if (i>=5){
+        lastfive=lastfive+numeros;
+    }
+    document.write(numeros,' / ');
+    }
+    document.write('Fueron los numeros ingresados ');
+    document.write("<br>","<br>");
+    document.write('De los cuales ', countnegativos , ' son numeros negativos' );
+    document.write("<br>","<br>");
+    document.write('De los cuales ', countpositivos , ' son numeros positivos');
+    document.write("<br>","<br>");
+    document.write('De los cuales ', countmultiplos , ' son multiplos de 15');
+    document.write("<br>","<br>");
+    document.write('La suma de todos los numeros pares es de: ', sumapares);
+    document.write("<br>","<br>");
+    document.write('La suma de los ultimos 5 numeros fue de : ', lastfive);
+    
+    </script>
+    
+</body>
+</html>

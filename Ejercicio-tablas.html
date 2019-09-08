@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Desarrollar un programa que muestre la tabla de multiplicar de un número ingresado po4 teclado. -->
+
+    <script>
+    var tablas = 0;
+    var multitablas = 0;
+
+    tablas = parseInt(prompt("ingrese un numero para saber su tabla"));
+    document.write('Valor Ingresado:', tablas);
+    document.write('<br>');
+    for (var i = 1; i < 10 ; i++){
+        multitablas=parseInt(tablas*i);
+        document.write(multitablas);
+        document.write('<br>');
+    }
+    
+    </script>
+</body>
+</html>

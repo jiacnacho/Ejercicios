@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        /**
+         * Función que muestra por pantalla los números de fibonacci
+         * Tiene que recibir el numero de sucesiones
+         */
+        function fibonacci(numero)
+        {
+            var var1 = 0;
+            var var2 = 1;
+            var var3;
+ 
+            document.write(var1+" ");
+            document.write("<br>");
+            document.write(var2+" ");
+            document.write("<br>");
+ 
+            for(var i=2; i <= numero;i++)
+            {
+                var3 = var1 + var2;
+                var1 = var2;
+                var2 = var3;
+                document.write(var3+" ");
+                document.write("<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+    <script type="text/javascript">
+        // Ejecutamos la función pasándole como parámetro el numero 
+        fibonacci(20);
+    </script>
+    </div>
+</body>
+</html>

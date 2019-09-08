@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<!--     While
+
+    Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. (No se ingresan valores por teclado).        
+    
+    -->
+
+    <script>
+    var verificador = 11;
+    var acumulador = 0;
+    var condicion=0;
+    var i=1;
+
+    condicion = (verificador*25);
+    document.write('EJERCICIOS DE MULTIPLOS DE 11', '<br>', '<br>'); 
+    while (acumulador <= condicion){
+        acumulador = (verificador*i);
+        i++;
+        document.write(acumulador,' - '); 
+    }
+    document.write(' <br> '); 
+    document.write(' <br> '); 
+    document.write(' <br> '); 
+
+/*     Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla 8 -16 -24, etc.  */
+
+    document.write('EJERCICIOS DE MULTIPLOS DE 8', '<br>', '<br>'); 
+    var numero=8;
+    var acumulador = 0;
+    var i = 1;
+
+    while (acumulador <= 495){        
+        acumulador= (numero*i);
+        i++;
+        document.write(acumulador,' - ');         
+    }
+
+    
+    </script>
+
+</body>
+</html>
