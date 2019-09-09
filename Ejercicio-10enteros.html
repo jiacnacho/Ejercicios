@@ -34,12 +34,12 @@
         }else {
             countpositivos++;
         }
-    multiplos=parseInt(numeros%15);
-    if (multiplos==0){
+    /* multiplos=parseInt(numeros%15); */
+    if (parseInt(numeros%15)==0){
         countmultiplos++; 
     }
-    acumulado=parseInt(numeros%2);
-    if (acumulado ==0){
+    /* acumulado=parseInt(numeros%2); */
+    if (parseInt(numeros%2)==0){
         sumapares = sumapares+numeros;
     }
 
